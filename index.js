@@ -47,7 +47,6 @@ function createTotuzennosi(ev){
   texts.forEach(text => {
     const length = getLength(text);
     lenMax = lenMax < length ? length : lenMax;
-    console.log(length, lenMax)
   });
 
   // 上
