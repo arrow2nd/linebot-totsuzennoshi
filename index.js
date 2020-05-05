@@ -1,5 +1,6 @@
 'use strict';
 const express = require('express');
+const split = require('graphemesplit');
 const line = require('@line/bot-sdk');
 const PORT = process.env.PORT || 5000;
 const config = {
@@ -44,7 +45,9 @@ function createTotuzennosi(ev){
   // 一番長い文字数を取得
   let lenMax = 0;
   texts.forEach(text => {
-    lenMax = lenMax < text.length ? text.length : lenMax;
+    const length = getLength(text);
+    lenMax = lenMax < length ? length : lenMax;
+    console.log(length, lenMax)
   });
 
   // 上
@@ -53,7 +56,7 @@ function createTotuzennosi(ev){
   
   // 真ん中
   texts.forEach(text => {
-    lines.push('＞　' + text + '　'.repeat(lenMax - text.length) + '　＜');
+    lines.push('＞　' + text + '　'.repeat(lenMax - getLength(text)) + '　＜');
   });
 
   // 下
@@ -69,4 +72,18 @@ function createTotuzennosi(ev){
     type: 'text',
     text: result
   });  
+};
+
+// 文字列の長さを取得
+function getLength(text){
+  let len = 0;
+  const texts = split(text);
+  texts.forEach(value => {
+    if (!value.match(/[^\x01-\x7E]/) || !value.match(/[^\uFF65-\uFF9F]/)) {
+      len = len + 0.5;
+    } else {
+      len = len + [...value].length;
+    };
+  });
+  return Math.ceil(len);
 };
