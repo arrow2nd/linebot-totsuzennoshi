@@ -3,7 +3,7 @@
 
 ![image](https://user-images.githubusercontent.com/44780846/81030955-a1a70300-8ec5-11ea-81bc-b2a2bb59e0dc.png)
 
-https://line.me/R/ti/p/@996klscq
+<a href="https://lin.ee/2OnfDEwtE"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0"></a>
 
 ## 使い方
 強調したい文を送信してください。
