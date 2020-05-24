@@ -1,4 +1,4 @@
-# linebot-totuzennosi
+# linebot-totuzennoshi
 突然の死を手軽に作ることができるLINEBotです。
 
 ![image](https://user-images.githubusercontent.com/44780846/81030955-a1a70300-8ec5-11ea-81bc-b2a2bb59e0dc.png)
