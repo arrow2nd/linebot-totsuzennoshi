@@ -83,27 +83,10 @@ function createTotuzennoshi(ev){
 
 /**
  * 文字列の長さを取得する（半角）
- * @param {String} text 
+ * @param {String} text テキスト
+ * @return {Number}     文字列の長さ（全角）
  */
 function getLength(text){
-  let len = 0;
-  const texts = split(text);
-  texts.forEach(value => {
-    if (!value.match(/[^\x01-\x7E]/) || !value.match(/[^\uFF65-\uFF9F]/)) {
-      len = len + 0.5;
-    } else {
-      len = len + [...value].length;
-    };
-  });
-  return Math.ceil(len);
-};
-
-/**
- * 文字列の長さを取得する（半角）
- * @param  {String} text テキスト
- * @return {Number}      文字列の長さ（全角）
- */
-function getLength2(text){
   let len = 0;
   const texts = split(text);
   texts.forEach(value => {
