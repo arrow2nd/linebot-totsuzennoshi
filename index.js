@@ -14,7 +14,11 @@ express()
   .post('/hook/', line.middleware(config), (req, res) => lineBot(req, res))
   .listen(PORT, () => console.log(`Listening on ${PORT}`));
 
-// LINEBot
+/**
+ * LINEBotメイン
+ * @param {Object} req requestオブジェクト
+ * @param {Object} res responseオブジェクト
+ */
 function lineBot(req, res) {
   res.status(200).end();
   const events = req.body.events;
@@ -25,18 +29,22 @@ function lineBot(req, res) {
       console.log(`メッセージイベントではありません : ${ev.type}`);
       continue;
     }; 
-    createTotuzennosi(ev);
+    createTotuzennoshi(ev);
   };
 };
 
-// 突然の死
-function createTotuzennosi(ev){
+/**
+ * 突然の死を作る
+ * @param {Object} ev イベントオブジェクト
+ */
+function createTotuzennoshi(ev){
   // テキスト以外ならreturn
   if (ev.message.type !== 'text') {
-    return client.replyMessage(ev.replyToken, {
+    client.replyMessage(ev.replyToken, {
       type: 'text',
       text: 'テキストでお願いします！'
     });
+    return;
   };
 
   const text = ev.message.text;
@@ -59,7 +67,7 @@ function createTotuzennosi(ev){
   });
 
   // 下
-  lines.push('￣Y^' + 'Y^'.repeat(lenMax) + 'Y￣');
+  lines.push('￣Y^' + 'Y^'.repeat(lenMax) + 'Y^￣');
 
   // 結合
   const result = lines.reduce((accumulator, currentValue) => {
@@ -67,14 +75,35 @@ function createTotuzennosi(ev){
   });
 
   // 返信
-  return client.replyMessage(ev.replyToken, {
+  client.replyMessage(ev.replyToken, {
     type: 'text',
     text: result
   });  
 };
 
-// 文字列の長さを取得
+/**
+ * 文字列の長さを取得する（半角）
+ * @param {String} text 
+ */
 function getLength(text){
+  let len = 0;
+  const texts = split(text);
+  texts.forEach(value => {
+    if (!value.match(/[^\x01-\x7E]/) || !value.match(/[^\uFF65-\uFF9F]/)) {
+      len = len + 0.5;
+    } else {
+      len = len + [...value].length;
+    };
+  });
+  return Math.ceil(len);
+};
+
+/**
+ * 文字列の長さを取得する（半角）
+ * @param  {String} text テキスト
+ * @return {Number}      文字列の長さ（全角）
+ */
+function getLength2(text){
   let len = 0;
   const texts = split(text);
   texts.forEach(value => {
