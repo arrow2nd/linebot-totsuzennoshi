@@ -67,7 +67,7 @@ function createTotuzennoshi(ev){
   });
 
   // 下
-  lines.push('￣Y^' + 'Y^'.repeat(lenMax) + 'Y^￣');
+  lines.push('￣Y^' + 'Y^'.repeat(lenMax) + 'Y￣');
 
   // 結合
   const result = lines.reduce((accumulator, currentValue) => {
@@ -82,7 +82,7 @@ function createTotuzennoshi(ev){
 };
 
 /**
- * 文字列の長さを取得する（半角）
+ * 文字列の長さを取得する
  * @param {String} text テキスト
  * @return {Number}     文字列の長さ（全角）
  */
