@@ -6,7 +6,7 @@
 <a href="https://lin.ee/2OnfDEwtE"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0"></a>
 
 ## 使い方
-友だち登録して、強調したい文を送信してください！!
+友だち登録して、強調したい文を送信してください！
 
 ![無題22_20200505145149](https://user-images.githubusercontent.com/44780846/81038126-f5bee100-8edf-11ea-9eb2-4f1b1549fb14.png)
 

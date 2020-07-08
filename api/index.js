@@ -12,33 +12,24 @@ const client = new line.Client(config);
 
 const app = express();
 app.get('/', (req, res) => res.send('ok! (GET)'));
-app.post('/hook/', line.middleware(config), (req, res) => lineBot(req, res))
-
-
-/**
- * LINEBot
- * @param {Object} req request
- * @param {Object} res response
- */
-async function lineBot(req, res) {
-  const events = req.body.events;
-    for (let ev of events) {
-        // メッセージ以外、検証の場合
-        if (ev.type !== 'message' || ev.replyToken === '00000000000000000000000000000000' || ev.replyToken === 'ffffffffffffffffffffffffffffffff') {
-            console.log(`メッセージイベントではありません : ${ev.type}`);
-            continue;
-        }; 
-        await reply(ev);
-        console.log('success!');
-    };
+app.post('/hook/', line.middleware(config), async (req, res) => {
+    await Promise.all(req.body.events.map(reply));
+    console.log('success!');
     res.status(200).end();
-};
+});
+
 
 /**
  * 突然の死を作る
  * @param {Object} ev イベント
  */
 async function reply(ev){
+    // メッセージイベント以外・検証の場合
+    if (ev.type !== 'message' || ev.replyToken === '00000000000000000000000000000000' || ev.replyToken === 'ffffffffffffffffffffffffffffffff') {
+        console.log(`メッセージイベントではありません : ${ev.type}`);
+        return;
+    }; 
+
     // テキスト以外の場合
     if (ev.message.type !== 'text') {
         await client.replyMessage(ev.replyToken, {
