@@ -2,33 +2,39 @@
 const express = require('express');
 const split = require('graphemesplit');
 const line = require('@line/bot-sdk');
-const PORT = process.env.PORT || 5000;
+require('dotenv').config();
+
+const PORT = process.env.PORT;
 const config = {
-  channelAccessToken: process.env.ACCESS_TOKEN || 'xxx',
-  channelSecret: process.env.SECRET_KEY || 'xxx'
+    channelAccessToken: process.env.ACCESS_TOKEN,
+    channelSecret: process.env.SECRET_KEY
 };
 const client = new line.Client(config);
 
-
+// ルーティング
 const app = express();
-app.get('/', (req, res) => res.send('ok! (GET)'));
+app.get('/', (_req, res) => res.send('ok! (GET)'));
 app.post('/hook/', line.middleware(config), async (req, res) => {
-    await Promise.all(req.body.events.map(reply));
-    console.log('success!');
+    await Promise.all(req.body.events.map(e => main(e)));
     res.status(200).end();
 });
 
-
 /**
- * 突然の死を作る
- * @param {Object} ev イベント
+ * 突然の死
+ * 
+ * @param {Object} ev イベントオブジェクト
  */
-async function reply(ev){
-    // メッセージイベント以外・検証の場合
-    if (ev.type !== 'message' || ev.replyToken === '00000000000000000000000000000000' || ev.replyToken === 'ffffffffffffffffffffffffffffffff') {
+async function main(ev){
+    const tokenForVerification = [
+        '00000000000000000000000000000000',
+        'ffffffffffffffffffffffffffffffff'
+    ]
+    
+    // メッセージイベント以外・検証なら処理しない
+    if (ev.type !== 'message' || tokenForVerification.includes(ev.replyToken)) {
         console.log(`メッセージイベントではありません : ${ev.type}`);
         return;
-    }; 
+    }
 
     // テキスト以外の場合
     if (ev.message.type !== 'text') {
@@ -37,60 +43,48 @@ async function reply(ev){
             text: '＿人人人人人人人人人人人人人＿\n＞　テキストでお願いします　＜\n￣Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y￣'
         });
         return;
-    };
+    }
 
-    // メッセージテキストを取得
-    const text = ev.message.text;
-    const texts = text.split('\n');
-
-    // テキスト内で一番長い文字数を取得
-    let lenMax = 0;
-    texts.forEach(text => {
-        const length = getLength(text);
-        lenMax = lenMax < length ? length : lenMax;
-    });
-
-    // 上
-    const lines = []; 
-    lines.push('＿人' + '人'.repeat(lenMax) + '人＿');
+    // AA作成
+    const lines = ev.message.text.split('\n');
+    const lenMax = Math.max(...lines.map(v => getLength(v)));
+    let toge = ['＿人' + '人'.repeat(lenMax) + '人＿']; 
   
     // 真ん中
-    texts.forEach(text => {
-        lines.push('＞　' + text + '　'.repeat(lenMax - getLength(text)) + '　＜');
+    lines.forEach(text => {
+        toge.push('＞　' + text + '　'.repeat(lenMax - getLength(text)) + '　＜');
     });
 
     // 下
-    lines.push('￣Y^' + 'Y^'.repeat(lenMax) + 'Y￣');
+    toge.push('￣Y^' + 'Y^'.repeat(lenMax) + 'Y￣');
 
-    // 結合
-    const result = lines.reduce((accumulator, currentValue) => {
-        return accumulator + '\n' + currentValue;
-    });
-
-    // トゲトゲを返信する
+    // 返信
+    const result = toge.reduce((accumulator, currentValue) => accumulator + '\n' + currentValue);
     await client.replyMessage(ev.replyToken, {
         type: 'text',
         text: result
     });  
-};
+}
 
 /**
  * 文字列の長さを取得する
+ * 
  * @param  {String} text テキスト
  * @return {Number}      全角での文字列の長さ
  */
 function getLength(text){
+    const lines = split(text);
     let len = 0;
-    const texts = split(text);
-    texts.forEach(value => {
+    lines.forEach(value => {
+        // eslint-disable-next-line no-control-regex
         if (!value.match(/[^\x01-\x7E]/) || !value.match(/[^\uFF65-\uFF9F]/)) {
-            len = len + 0.5;
+            len += 0.5;
         } else {
-            len = len + [...value].length;
-        };
+            len += [...value].length;
+        }
     });
     return Math.ceil(len);
-};
+}
 
 // vercel
 (process.env.NOW_REGION) ? module.exports = app : app.listen(PORT);

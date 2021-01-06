@@ -1,11 +1,16 @@
 {
-  "name": "linebot-totuzennoshi",
-  "version": "1.0.4",
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "@line/bot-sdk": "^6.8.4",
-    "express": "^4.17.1",
-    "graphemesplit": "^2.4.0"
-  }
+    "name": "linebot-totsuzennoshi",
+    "version": "1.0.5",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "@line/bot-sdk": "^7.2.0",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "graphemesplit": "^2.4.2"
+    },
+    "devDependencies": {
+        "eslint": "^7.17.0",
+        "eslint-plugin-node": "^11.1.0"
+    }
 }
