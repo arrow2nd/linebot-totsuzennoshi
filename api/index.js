@@ -25,17 +25,6 @@ app.post('/hook/', line.middleware(config), async (req, res) => {
  * @param {Object} ev イベントオブジェクト
  */
 async function main(ev){
-    const tokenForVerification = [
-        '00000000000000000000000000000000',
-        'ffffffffffffffffffffffffffffffff'
-    ]
-    
-    // メッセージイベント以外・検証なら処理しない
-    if (ev.type !== 'message' || tokenForVerification.includes(ev.replyToken)) {
-        console.log(`メッセージイベントではありません : ${ev.type}`);
-        return;
-    }
-
     // テキスト以外の場合
     if (ev.message.type !== 'text') {
         await client.replyMessage(ev.replyToken, {
@@ -51,9 +40,7 @@ async function main(ev){
     let toge = ['＿人' + '人'.repeat(lenMax) + '人＿']; 
   
     // 真ん中
-    lines.forEach(text => {
-        toge.push('＞　' + text + '　'.repeat(lenMax - getLength(text)) + '　＜');
-    });
+    lines.forEach(text => toge.push('＞　' + text + '　'.repeat(lenMax - getLength(text)) + '　＜'));
 
     // 下
     toge.push('￣Y^' + 'Y^'.repeat(lenMax) + 'Y￣');
@@ -87,4 +74,4 @@ function getLength(text){
 }
 
 // vercel
-(process.env.NOW_REGION) ? module.exports = app : app.listen(PORT);
+(process.env.NOW_REGION) ? module.exports = app : app.listen(PORT, () => console.log(`Listening on ${PORT}`));
