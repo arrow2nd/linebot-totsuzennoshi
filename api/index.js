@@ -25,8 +25,7 @@ async function main(ev) {
   if (ev.message.type !== 'text') {
     await client.replyMessage(ev.replyToken, {
       type: 'text',
-      text:
-        '＿人人人人人人人人人人人人人＿\n＞　テキストでお願いします　＜\n￣Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y￣'
+      text: '＿人人人人人人人人人人人人人＿\n＞　テキストでお願いします　＜\n￣Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y￣'
     })
     return
   }
