@@ -7,11 +7,11 @@
     "@line/bot-sdk": "^7.4.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "graphemesplit": "^2.4.3"
+    "graphemesplit": "^2.4.4"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
+    "eslint": "^8.1.0",
     "eslint-config-prettier": "^8.3.0",
-    "prettier": "^2.4.0"
+    "prettier": "^2.4.1"
   }
 }
