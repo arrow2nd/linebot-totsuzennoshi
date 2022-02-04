@@ -3,10 +3,10 @@ name: test
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -21,5 +21,8 @@ jobs:
           node-version: '16'
           cache: yarn
 
+      - name: Install dependencies
+        run: yarn install --immutable
+
       - name: Run test
-        run: yarn test
+        run: yarn run test

@@ -1,9 +1,10 @@
 # linebot-totsuzennoshi
 
+[![test](https://github.com/arrow2nd/linebot-totsuzennoshi/actions/workflows/test.yml/badge.svg)](https://github.com/arrow2nd/linebot-totsuzennoshi/actions/workflows/test.yml)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 ![GitHub](https://img.shields.io/github/license/arrow2nd/linebot-totuzennoshi)
 
-突然の死 AA を作る LINEBot💀
+突然の死 AA を作る LINEBot 💀
 
 ## 友だち登録
 
