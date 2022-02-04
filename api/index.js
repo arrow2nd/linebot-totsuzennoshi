@@ -9,10 +9,11 @@ const config = {
   channelAccessToken: process.env.ACCESS_TOKEN,
   channelSecret: process.env.SECRET_KEY
 }
+
 const client = new line.Client(config)
+const app = express()
 
 // ルーティング
-const app = express()
 app.get('/', (_req, res) => res.send('ok! (GET)'))
 app.post('/hook/', line.middleware(config), async (req, res) => {
   await Promise.all(req.body.events.map((e) => main(e)))
@@ -44,24 +45,21 @@ async function main(ev) {
   toge.push('￣Y^' + 'Y^'.repeat(lenMax) + 'Y￣')
 
   // 返信
-  const result = toge.reduce(
-    (accumulator, currentValue) => accumulator + '\n' + currentValue
-  )
   await client.replyMessage(ev.replyToken, {
     type: 'text',
-    text: result
+    text: toge.join('\n')
   })
 }
 
 /**
  * 文字列の長さを取得する
- *
  * @param  {String} text テキスト
  * @return {Number}      全角での文字列の長さ
  */
 function getLength(text) {
   const lines = split(text)
   let len = 0
+
   lines.forEach((value) => {
     // eslint-disable-next-line no-control-regex
     if (!value.match(/[^\x01-\x7E]/) || !value.match(/[^\uFF65-\uFF9F]/)) {
@@ -70,6 +68,7 @@ function getLength(text) {
       len += [...value].length
     }
   })
+
   return Math.ceil(len)
 }
 
