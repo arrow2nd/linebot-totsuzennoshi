@@ -31,7 +31,9 @@ async function main(ev) {
   })
 }
 
-// vercel
-process.env.NOW_REGION
-  ? (module.exports = app)
-  : app.listen(PORT, () => console.log(`Listening on ${PORT}`))
+// ローカル環境
+if (!process.env.NOW_REGION) {
+  app.listen(PORT, () => console.log(`Listening on ${PORT}`))
+}
+
+export default app
