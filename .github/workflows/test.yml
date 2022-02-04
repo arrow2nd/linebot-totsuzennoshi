@@ -21,5 +21,8 @@ jobs:
           node-version: '16'
           cache: yarn
 
+      - name: Install dependencies
+        run: yarn install --immutable
+
       - name: Run test
         run: yarn run test
