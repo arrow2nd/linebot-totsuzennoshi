@@ -1,7 +1,8 @@
 {
   "name": "linebot-totsuzennoshi",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "main": "api/index.js",
+  "type": "module",
   "license": "MIT",
   "scripts": {
     "start": "node ./api/index.js"
