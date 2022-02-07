@@ -22,6 +22,10 @@
 
 - 文字によっては表示が崩れる場合があります
 
+## プライバシーポリシー
+
+[こちら](https://arrow2nd.github.io/linebot-totsuzennoshi/privacypolicy) をご覧ください
+
 ## 元ネタ
 
 > https://dic.nicovideo.jp/a/%E7%AA%81%E7%84%B6%E3%81%AE%E6%AD%BB
