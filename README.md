@@ -24,7 +24,7 @@
 
 ## プライバシーポリシー
 
-[こちら](https://arrow2nd.github.io/linebot-totsuzennoshi/privacypolicy) をご覧ください
+[こちら](https://arrow2nd.github.io/linebot-totsuzennoshi/) をご覧ください
 
 ## 元ネタ
 
