@@ -1,8 +1,7 @@
-'use strict'
 import 'dotenv/config'
 import express from 'express'
-
 import { Client, middleware } from '@line/bot-sdk'
+
 import { createToge } from '../lib/toge.js'
 
 const PORT = process.env.PORT
