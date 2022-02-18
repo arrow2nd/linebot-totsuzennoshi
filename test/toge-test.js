@@ -1,5 +1,4 @@
 /* eslint-disable no-undef */
-'use strict'
 import assert from 'assert'
 import { createToge } from '../lib/toge.js'
 
