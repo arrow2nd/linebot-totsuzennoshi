@@ -15,10 +15,10 @@
     "graphemesplit": "^2.4.4"
   },
   "devDependencies": {
-    "eslint": "^8.10.0",
+    "eslint": "^8.11.0",
     "eslint-config-prettier": "^8.5.0",
-    "mocha": "^9.2.1",
-    "prettier": "^2.5.1"
+    "mocha": "^9.2.2",
+    "prettier": "^2.6.0"
   },
   "packageManager": "yarn@3.1.1"
 }
