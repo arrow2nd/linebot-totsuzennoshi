@@ -1,7 +1,7 @@
 # linebot-totsuzennoshi
 
 [![test](https://github.com/arrow2nd/linebot-totsuzennoshi/actions/workflows/test.yml/badge.svg)](https://github.com/arrow2nd/linebot-totsuzennoshi/actions/workflows/test.yml)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
+[![Depfu](https://badges.depfu.com/badges/50d7bb62e37dfd4f5ef11e9071231c49/overview.svg)](https://depfu.com/github/arrow2nd/linebot-totsuzennoshi?project_id=34199)
 ![GitHub](https://img.shields.io/github/license/arrow2nd/linebot-totuzennoshi)
 
 突然の死 AA を作る LINEBot 💀
@@ -25,6 +25,28 @@
 ## プライバシーポリシー
 
 [こちら](https://arrow2nd.github.io/linebot-totsuzennoshi/) をご覧ください
+
+## 実行
+
+以下の内容で `.env`を作成
+
+```
+PORT=<ポート番号>
+ACCESS_TOKEN=<LINEBotアクセストークン>
+SECRET_KEY=<LINEBotシークレットキー>
+```
+
+ngrok 等でポートを公開し、吐き出された URL を LINEBot の 管理画面から Webhook に登録
+
+```
+ngrok http <ポート番号>
+```
+
+実行！
+
+```
+yarn start
+```
 
 ## 元ネタ
 
