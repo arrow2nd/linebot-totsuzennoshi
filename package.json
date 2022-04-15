@@ -9,7 +9,7 @@
     "test": "yarn mocha ./test/"
   },
   "dependencies": {
-    "@line/bot-sdk": "^7.4.0",
+    "@line/bot-sdk": "^7.5.0",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "graphemesplit": "^2.4.4"
