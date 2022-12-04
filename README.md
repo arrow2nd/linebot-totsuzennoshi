@@ -1,7 +1,6 @@
 # linebot-totsuzennoshi
 
 [![test](https://github.com/arrow2nd/linebot-totsuzennoshi/actions/workflows/test.yml/badge.svg)](https://github.com/arrow2nd/linebot-totsuzennoshi/actions/workflows/test.yml)
-[![Depfu](https://badges.depfu.com/badges/50d7bb62e37dfd4f5ef11e9071231c49/overview.svg)](https://depfu.com/github/arrow2nd/linebot-totsuzennoshi?project_id=34199)
 ![GitHub](https://img.shields.io/github/license/arrow2nd/linebot-totuzennoshi)
 
 突然の死 AA を作る LINEBot 💀
