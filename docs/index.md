@@ -1,6 +1,6 @@
 # プライバシーポリシー
 
-> 最終更新日: 2022/02/08
+> 最終更新日: 2023/01/21
 
 ## 突然の死ジェネレーターについて
 
@@ -26,7 +26,6 @@
 
 ご不明な点がありましたら、お気軽にお問合せください。
 
-- Twitter: [@arrow_2nd](https://mobile.twitter.com/arrow_2nd/)
 - Email: contact at arrow2nd.com
 
 > ※ at を @ に置き換えてください
