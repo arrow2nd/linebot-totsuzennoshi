@@ -86,9 +86,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@line/bot-sdk@npm:^7.5.2":
-  version: 7.7.0
-  resolution: "@line/bot-sdk@npm:7.7.0"
+"@line/bot-sdk@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "@line/bot-sdk@npm:8.0.0"
   dependencies:
     "@types/body-parser": ^1.19.2
     "@types/node": ^18.0.0
@@ -96,7 +96,7 @@ __metadata:
     body-parser: ^1.20.0
     file-type: ^16.5.4
     form-data: ^4.0.0
-  checksum: 4ed1f22cfd26686f55440ae654c7a24c34cc6d5c0b9659bf63423731a0fe2210b3e1057db196bd28132cb5f2654f5cebe3f3f99a68dbd31f04f1849c262da638
+  checksum: 1f0fe04c91376d24e2446a8f223224805cf2937bf6e46d6c3e0fc88bc85bd5e70a1683d660ff82f9ad66025788eab187f52c78f321939bcb5af6b258466ca321
   languageName: node
   linkType: hard
 
@@ -1591,7 +1591,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "linebot-totsuzennoshi@workspace:."
   dependencies:
-    "@line/bot-sdk": ^7.5.2
+    "@line/bot-sdk": ^8.0.0
     dotenv: ^16.0.3
     eslint: ^8.35.0
     eslint-config-prettier: ^9.0.0
