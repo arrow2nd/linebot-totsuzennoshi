@@ -87,16 +87,16 @@ __metadata:
   linkType: hard
 
 "@line/bot-sdk@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@line/bot-sdk@npm:8.0.0"
+  version: 8.0.1
+  resolution: "@line/bot-sdk@npm:8.0.1"
   dependencies:
     "@types/body-parser": ^1.19.2
-    "@types/node": ^18.0.0
+    "@types/node": ^20.0.0
     axios: ^1.0.0
     body-parser: ^1.20.0
     file-type: ^16.5.4
     form-data: ^4.0.0
-  checksum: 1f0fe04c91376d24e2446a8f223224805cf2937bf6e46d6c3e0fc88bc85bd5e70a1683d660ff82f9ad66025788eab187f52c78f321939bcb5af6b258466ca321
+  checksum: 3f212e431fedcad13a52b6d76d6129225c177652f48cf40f87ed00b3efdf90bd72ea0ad0ceea21ef99dc52d61d978cce08b1a3c33998b9710011c0466f3fcd4a
   languageName: node
   linkType: hard
 
@@ -187,10 +187,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.0.0":
-  version: 18.17.18
-  resolution: "@types/node@npm:18.17.18"
-  checksum: 59cbd906363d37017fe9ba0c08c1446e440d4d977459609c5f90b8fb7eb41f273ce8af30c5a5b5d599d7de934c1b3702bc9fc27caf8d2270e5cdb659c5232991
+"@types/node@npm:^20.0.0":
+  version: 20.8.9
+  resolution: "@types/node@npm:20.8.9"
+  dependencies:
+    undici-types: ~5.26.4
+  checksum: 0c05f3502a9507ff27e91dd6fd574fa6f391b3fafedcfe8e0c8d33351fb22d02c0121f854e5b6b3ecb9a8a468407ddf6e7ac0029fb236d4c7e1361ffc758a01f
   languageName: node
   linkType: hard
 
@@ -2556,6 +2558,13 @@ __metadata:
     media-typer: 0.3.0
     mime-types: ~2.1.24
   checksum: 2c8e47675d55f8b4e404bcf529abdf5036c537a04c2b20177bcf78c9e3c1da69da3942b1346e6edb09e823228c0ee656ef0e033765ec39a70d496ef601a0c657
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~5.26.4":
+  version: 5.26.5
+  resolution: "undici-types@npm:5.26.5"
+  checksum: 3192ef6f3fd5df652f2dc1cd782b49d6ff14dc98e5dced492aa8a8c65425227da5da6aafe22523c67f035a272c599bb89cfe803c1db6311e44bed3042fc25487
   languageName: node
   linkType: hard
 
