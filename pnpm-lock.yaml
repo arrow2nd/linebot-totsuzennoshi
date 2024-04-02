@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@line/bot-sdk':
     specifier: ^9.0.0
-    version: 9.0.3
+    version: 9.0.4
   dotenv:
     specifier: ^16.0.3
     version: 16.4.5
@@ -96,11 +96,11 @@ packages:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
     dev: true
 
-  /@line/bot-sdk@9.0.3:
-    resolution: {integrity: sha512-WWO82H7E+XXHbpCnBbq3n0RFfn0GV7kGlwC46w9IG1VGteauXO5hnm3R+d4QPkt7kqCNBLoZpmr88LA1DE6Q8w==}
+  /@line/bot-sdk@9.0.4:
+    resolution: {integrity: sha512-70nM+JS1gQ8VE3SbXSRR05g380YTtw8ZAR6ojP0RiMQeHX/OO0zaLDWQCbs9XF2oO5m8zxy7ylRDteYR0TJWiA==}
     engines: {node: '>=18'}
     dependencies:
-      '@types/node': 20.11.27
+      '@types/node': 20.12.2
     optionalDependencies:
       axios: 1.6.8
     transitivePeerDependencies:
@@ -128,8 +128,8 @@ packages:
       fastq: 1.17.1
     dev: true
 
-  /@types/node@20.11.27:
-    resolution: {integrity: sha512-qyUZfMnCg1KEz57r7pzFtSGt49f6RPkPBis3Vo4PbS7roQEDn22hiHzl/Lo1q4i4hDEgBJmBF/NTNg2XR0HbFg==}
+  /@types/node@20.12.2:
+    resolution: {integrity: sha512-zQ0NYO87hyN6Xrclcqp7f8ZbXNbRfoGWNcMvHTPQp9UUrwI0mI7XBz+cu7/W6/VClYo2g63B0cjull/srU7LgQ==}
     dependencies:
       undici-types: 5.26.5
     dev: false
