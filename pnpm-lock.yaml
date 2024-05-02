@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@line/bot-sdk':
         specifier: ^9.0.0
-        version: 9.2.0
+        version: 9.2.1
       dotenv:
         specifier: ^16.0.3
         version: 16.4.5
@@ -73,8 +73,8 @@ packages:
     resolution: {integrity: sha512-X38nUbachlb01YMlvPFojKoiXq+LzZvuSce70KPMPdeM1Rj03k4dR7lDslhbqXn3Ang4EU3+EAmwEAsbrjHW3g==}
     engines: {node: '>=18.18'}
 
-  '@line/bot-sdk@9.2.0':
-    resolution: {integrity: sha512-Xi124psxMheVziRwHLJ/T8w3V+yoUJ/b57k5UkGW2iKuxtfIizfrnROHj1Me9Yep/ypMAfjGyzQ9gmCHfVCh5w==}
+  '@line/bot-sdk@9.2.1':
+    resolution: {integrity: sha512-JuZavfLu/lMnuAj1LCXDFfHcKxlGWlRHkBBcqoNMvEi8FkWLz+yfiTf01aVV96EphbZAdTvDc6zAzCZ+9bEDGA==}
     engines: {node: '>=18'}
 
   '@nodelib/fs.scandir@2.1.5':
@@ -912,7 +912,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.2.3': {}
 
-  '@line/bot-sdk@9.2.0':
+  '@line/bot-sdk@9.2.1':
     dependencies:
       '@types/node': 20.12.7
     optionalDependencies:
