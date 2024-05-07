@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@line/bot-sdk':
         specifier: ^9.0.0
-        version: 9.2.1
+        version: 9.2.2
       dotenv:
         specifier: ^16.0.3
         version: 16.4.5
@@ -69,8 +69,8 @@ packages:
     resolution: {integrity: sha512-Ttl/jHpxfS3st5sxwICYfk4pOH0WrLI1SpW283GgQL7sCWU7EHIOhX4b4fkIxr3tkfzwg8+FNojtzsIEE7Ecgg==}
     engines: {node: '>=18.18'}
 
-  '@line/bot-sdk@9.2.1':
-    resolution: {integrity: sha512-JuZavfLu/lMnuAj1LCXDFfHcKxlGWlRHkBBcqoNMvEi8FkWLz+yfiTf01aVV96EphbZAdTvDc6zAzCZ+9bEDGA==}
+  '@line/bot-sdk@9.2.2':
+    resolution: {integrity: sha512-s2lzDpKZJ1Xjn3aL6wD2bGO/J9ZK19bUu6mSlplaQi17fYNKZTu7nMv99lsaY37XOYq7nyvfS5UUjKJk58m/vQ==}
     engines: {node: '>=18'}
 
   '@nodelib/fs.scandir@2.1.5':
@@ -85,8 +85,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@types/node@20.12.7':
-    resolution: {integrity: sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==}
+  '@types/node@20.12.10':
+    resolution: {integrity: sha512-Eem5pH9pmWBHoGAT8Dr5fdc5rYA+4NAovdM4EktRPVAAiJhmWWfQrA0cFhAbOsQdSfIHjAud6YdkbL69+zSKjw==}
 
   accepts@1.3.8:
     resolution: {integrity: sha512-PYAthTa2m2VKxuvSD3DPC/Gy+U+sOA1LAuT8mkmRuvw+NACSaeXEQ+NHcVF7rONl6qcaxV3Uuemwawk+7+SJLw==}
@@ -910,9 +910,9 @@ snapshots:
 
   '@humanwhocodes/retry@0.2.4': {}
 
-  '@line/bot-sdk@9.2.1':
+  '@line/bot-sdk@9.2.2':
     dependencies:
-      '@types/node': 20.12.7
+      '@types/node': 20.12.10
     optionalDependencies:
       axios: 1.6.8
     transitivePeerDependencies:
@@ -930,7 +930,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@types/node@20.12.7':
+  '@types/node@20.12.10':
     dependencies:
       undici-types: 5.26.5
 
