@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@line/bot-sdk':
         specifier: ^9.0.0
-        version: 9.4.1
+        version: 9.4.2
       dotenv:
         specifier: ^16.0.3
         version: 16.4.5
@@ -86,8 +86,8 @@ packages:
     resolution: {integrity: sha512-JBxkERygn7Bv/GbN5Rv8Ul6LVknS+5Bp6RgDC/O8gEBU/yeH5Ui5C/OlWrTb6qct7LjjfT6Re2NxB0ln0yYybA==}
     engines: {node: '>=18.18'}
 
-  '@line/bot-sdk@9.4.1':
-    resolution: {integrity: sha512-5O/eLiFbH8QC+OfAJMwNYDRBwysFlMrtci+wub0HJHngHe+MF/b119YDWmlf67eFDdwjQayXk58ZLahNg4DEsw==}
+  '@line/bot-sdk@9.4.2':
+    resolution: {integrity: sha512-NBcuyUIF+Ssj8gBTmDiw7+Ay8CokSZ40olkI3gHv6nQ5ouWSAxfdtBu3lEBbsKPU+SkDEmQqsrFEEThXF0oLFg==}
     engines: {node: '>=18'}
 
   '@types/estree@1.0.6':
@@ -96,8 +96,8 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/node@20.16.11':
-    resolution: {integrity: sha512-y+cTCACu92FyA5fgQSAI8A1H429g7aSK2HsO7K4XYUWc4dY5IUz55JSDIYT6/VsOLfGy8vmvQYC2hfb0iF16Uw==}
+  '@types/node@20.17.0':
+    resolution: {integrity: sha512-a7zRo0f0eLo9K5X9Wp5cAqTUNGzuFLDG2R7C4HY2BhcMAsxgSPuRvAC1ZB6QkuUQXf0YZAgfOX2ZyrBa2n4nHQ==}
 
   accepts@1.3.8:
     resolution: {integrity: sha512-PYAthTa2m2VKxuvSD3DPC/Gy+U+sOA1LAuT8mkmRuvw+NACSaeXEQ+NHcVF7rONl6qcaxV3Uuemwawk+7+SJLw==}
@@ -419,8 +419,8 @@ packages:
       debug:
         optional: true
 
-  form-data@4.0.0:
-    resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
+  form-data@4.0.1:
+    resolution: {integrity: sha512-tzN8e4TX8+kkxGPK8D5u0FNmjPUjw3lwC9lSLxxoB/+GtsJG91CO8bSWy73APlgAZzZbXEYZJuxjkHH2w+Ezhw==}
     engines: {node: '>= 6'}
 
   forwarded@0.2.0:
@@ -938,9 +938,9 @@ snapshots:
 
   '@humanwhocodes/retry@0.3.1': {}
 
-  '@line/bot-sdk@9.4.1':
+  '@line/bot-sdk@9.4.2':
     dependencies:
-      '@types/node': 20.16.11
+      '@types/node': 20.17.0
     optionalDependencies:
       axios: 1.7.7
     transitivePeerDependencies:
@@ -950,7 +950,7 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/node@20.16.11':
+  '@types/node@20.17.0':
     dependencies:
       undici-types: 6.19.8
 
@@ -995,7 +995,7 @@ snapshots:
   axios@1.7.7:
     dependencies:
       follow-redirects: 1.15.9
-      form-data: 4.0.0
+      form-data: 4.0.1
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
@@ -1310,7 +1310,7 @@ snapshots:
   follow-redirects@1.15.9:
     optional: true
 
-  form-data@4.0.0:
+  form-data@4.0.1:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
