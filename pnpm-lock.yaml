@@ -13,7 +13,7 @@ importers:
         version: 9.5.0
       dotenv:
         specifier: ^16.0.3
-        version: 16.4.6
+        version: 16.4.7
       express:
         specifier: ^4.18.2
         version: 4.21.1
@@ -292,8 +292,8 @@ packages:
     resolution: {integrity: sha512-uIFDxqpRZGZ6ThOk84hEfqWoHx2devRFvpTZcTHur85vImfaxUbTW9Ryh4CpCuDnToOP1CEtXKIgytHBPVff5A==}
     engines: {node: '>=0.3.1'}
 
-  dotenv@16.4.6:
-    resolution: {integrity: sha512-JhcR/+KIjkkjiU8yEpaB/USlzVi3i5whwOjpIRNGi9svKEXZSe+Qp6IWAjFjv+2GViAoDRCUv/QLNziQxsLqDg==}
+  dotenv@16.4.7:
+    resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
     engines: {node: '>=12'}
 
   eastasianwidth@0.2.0:
@@ -1188,7 +1188,7 @@ snapshots:
 
   diff@5.2.0: {}
 
-  dotenv@16.4.6: {}
+  dotenv@16.4.7: {}
 
   eastasianwidth@0.2.0: {}
 
