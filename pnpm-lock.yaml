@@ -19,7 +19,7 @@ importers:
         version: 4.21.2
       graphemesplit:
         specifier: ^2.4.4
-        version: 2.4.4
+        version: 2.5.1
     devDependencies:
       eslint:
         specifier: ^9.0.0
@@ -489,8 +489,8 @@ packages:
     resolution: {integrity: sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==}
     engines: {node: '>= 0.4'}
 
-  graphemesplit@2.4.4:
-    resolution: {integrity: sha512-lKrpp1mk1NH26USxC/Asw4OHbhSQf5XfrWZ+CDv/dFVvd1j17kFgMotdJvOesmHkbFX9P9sBfpH8VogxOWLg8w==}
+  graphemesplit@2.5.1:
+    resolution: {integrity: sha512-KWxi3NIPD6HxC8rXHHV7FpN48XvrWUPS7yrTVxNFG08o298FdSsGd012NuWHxQJ3IaH1wcnSVoY56mZxpl4T6A==}
 
   has-flag@4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
@@ -576,8 +576,8 @@ packages:
   jackspeak@3.4.3:
     resolution: {integrity: sha512-OGlZQpz2yfahA/Rd1Y8Cd9SIEsqvXkLVoSw/cgwhnhFMDbsQFeZYoJJ7bIZBS9BcamUW96asq/npPWugM+RQBw==}
 
-  js-base64@3.7.5:
-    resolution: {integrity: sha512-3MEt5DTINKqfScXKfJFrRbxkrnk2AxPWGBL/ycjz4dK8iqiSJ06UxD8jh8xuh6p10TX4t2+7FsBYVxxQbMg+qA==}
+  js-base64@3.7.7:
+    resolution: {integrity: sha512-7rCnleh0z2CkXhH67J8K1Ytz0b2Y+yxTPL+/KOJoa20hfnVQ/3/T6W/KflYI4bRHRagNeXeU2bkNGI3v1oS/lw==}
 
   js-yaml@4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
@@ -1422,9 +1422,9 @@ snapshots:
 
   gopd@1.2.0: {}
 
-  graphemesplit@2.4.4:
+  graphemesplit@2.5.1:
     dependencies:
-      js-base64: 3.7.5
+      js-base64: 3.7.7
       unicode-trie: 2.0.0
 
   has-flag@4.0.0: {}
@@ -1496,7 +1496,7 @@ snapshots:
     optionalDependencies:
       '@pkgjs/parseargs': 0.11.0
 
-  js-base64@3.7.5: {}
+  js-base64@3.7.7: {}
 
   js-yaml@4.1.0:
     dependencies:
