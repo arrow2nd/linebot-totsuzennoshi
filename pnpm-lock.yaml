@@ -19,7 +19,7 @@ importers:
         version: 4.21.2
       graphemesplit:
         specifier: ^2.4.4
-        version: 2.5.1
+        version: 2.6.0
     devDependencies:
       eslint:
         specifier: ^9.0.0
@@ -489,8 +489,8 @@ packages:
     resolution: {integrity: sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==}
     engines: {node: '>= 0.4'}
 
-  graphemesplit@2.5.1:
-    resolution: {integrity: sha512-KWxi3NIPD6HxC8rXHHV7FpN48XvrWUPS7yrTVxNFG08o298FdSsGd012NuWHxQJ3IaH1wcnSVoY56mZxpl4T6A==}
+  graphemesplit@2.6.0:
+    resolution: {integrity: sha512-rG9w2wAfkpg0DILa1pjnjNfucng3usON360shisqIMUBw/87pojcBSrHmeE4UwryAuBih7g8m1oilf5/u8EWdQ==}
 
   has-flag@4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
@@ -1422,7 +1422,7 @@ snapshots:
 
   gopd@1.2.0: {}
 
-  graphemesplit@2.5.1:
+  graphemesplit@2.6.0:
     dependencies:
       js-base64: 3.7.7
       unicode-trie: 2.0.0
