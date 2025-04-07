@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@line/bot-sdk':
         specifier: ^9.7.1
-        version: 9.7.3
+        version: 9.8.0
       dotenv:
         specifier: ^16.4.7
         version: 16.4.7
@@ -102,8 +102,8 @@ packages:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
 
-  '@line/bot-sdk@9.7.3':
-    resolution: {integrity: sha512-PIeteAiPK5+CAFjOiKPfcdN4aIjYZIfqOkWKPUDRus5LShZzfrF0izE2wH5+6IOoyFV/p+3OiyOE9eJhsM1PgA==}
+  '@line/bot-sdk@9.8.0':
+    resolution: {integrity: sha512-vw4TTtkw5zwKu/FhATnm5n2sCcoKjcHEgN16Oq5NyXwGEzIcyh6RwGrYnX4SisiPO1lklAIba1DuDf9hEYZ4mg==}
     engines: {node: '>=18'}
 
   '@pkgjs/parseargs@0.11.0':
@@ -116,8 +116,8 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/node@22.13.14':
-    resolution: {integrity: sha512-Zs/Ollc1SJ8nKUAgc7ivOEdIBM8JAKgrqqUYi2J997JuKO7/tpQC+WCetQ1sypiKCQWHdvdg9wBNpUPEWZae7w==}
+  '@types/node@22.14.0':
+    resolution: {integrity: sha512-Kmpl+z84ILoG+3T/zQFyAJsU6EPTmOCj8/2+83fSN6djd6I4o7uOuGIH6vq3PrjY5BGitSbFuMN18j3iknubbA==}
 
   accepts@2.0.0:
     resolution: {integrity: sha512-5cvg6CtKwfgdmVqY1WIiXKc3Q1bkRqGLi+2W/6ao+6Y7gu/RCwRuAhGEzh5B4KlszSuTLgZYuqFqo5bImjNKng==}
@@ -888,8 +888,8 @@ packages:
     resolution: {integrity: sha512-OZs6gsjF4vMp32qrCbiVSkrFmXtG/AZhY3t0iAMrMBiAZyV9oALtXO8hsrHbMXF9x6L3grlFuwW2oAz7cav+Gw==}
     engines: {node: '>= 0.6'}
 
-  undici-types@6.20.0:
-    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
+  undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
   unicode-trie@2.0.0:
     resolution: {integrity: sha512-x7bc76x0bm4prf1VLg79uhAzKw8DVboClSN5VxJuQ+LKDOVEW9CdH+VY7SP+vX7xCYQqzzgQpFqz15zeLvAtZQ==}
@@ -1020,9 +1020,9 @@ snapshots:
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
 
-  '@line/bot-sdk@9.7.3':
+  '@line/bot-sdk@9.8.0':
     dependencies:
-      '@types/node': 22.13.14
+      '@types/node': 22.14.0
     optionalDependencies:
       axios: 1.8.4
     transitivePeerDependencies:
@@ -1035,9 +1035,9 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/node@22.13.14':
+  '@types/node@22.14.0':
     dependencies:
-      undici-types: 6.20.0
+      undici-types: 6.21.0
 
   accepts@2.0.0:
     dependencies:
@@ -1848,7 +1848,7 @@ snapshots:
       media-typer: 1.1.0
       mime-types: 3.0.1
 
-  undici-types@6.20.0: {}
+  undici-types@6.21.0: {}
 
   unicode-trie@2.0.0:
     dependencies:
