@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@line/bot-sdk':
         specifier: ^10.0.0
-        version: 10.1.0
+        version: 10.1.1
       dotenv:
         specifier: ^17.0.0
         version: 17.2.1
@@ -98,8 +98,8 @@ packages:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
 
-  '@line/bot-sdk@10.1.0':
-    resolution: {integrity: sha512-liD1by78oi5XZz6zWYfcUghtdvxbEaL2XTVOl4kJ8+k0Yh7G2A3MIcTbYiCjglQvKPXA/aynQX1FrckPuxe6CQ==}
+  '@line/bot-sdk@10.1.1':
+    resolution: {integrity: sha512-0SEkbzovdBEGPy1PF8nJZYjMfLjqdn7WhRXU1K+cjEqc5rX9xzA6M2rt4/g2ZqefwBg37/hGfT5/YhHMkxtZaw==}
     engines: {node: '>=20'}
 
   '@pkgjs/parseargs@0.11.0':
@@ -971,7 +971,7 @@ snapshots:
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
 
-  '@line/bot-sdk@10.1.0':
+  '@line/bot-sdk@10.1.1':
     dependencies:
       '@types/node': 22.17.0
     optionalDependencies:
