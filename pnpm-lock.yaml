@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@line/bot-sdk':
         specifier: ^10.0.0
-        version: 10.3.0
+        version: 10.4.0
       dotenv:
         specifier: ^17.0.0
         version: 17.2.3
@@ -94,8 +94,8 @@ packages:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
 
-  '@line/bot-sdk@10.3.0':
-    resolution: {integrity: sha512-+8EWzaU9v8XBGWA1UhYTHQvwP2SQ/ohoOQGa6Q3kaLdFmTomj5sPpsOOG4lHDLBuRhf9qmNclXJHSVQmPgmE6w==}
+  '@line/bot-sdk@10.4.0':
+    resolution: {integrity: sha512-deUato9NM0o30cxtREuRGdKEdr7cXytK9glntr7FcYYkVm7nTTTnN/UOO4NoGJp6B3bXDQF5+RcGliBSFuBywA==}
     engines: {node: '>=20'}
 
   '@pkgjs/parseargs@0.11.0':
@@ -108,8 +108,8 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/node@22.18.6':
-    resolution: {integrity: sha512-r8uszLPpeIWbNKtvWRt/DbVi5zbqZyj1PTmhRMqBMvDnaz1QpmSKujUtJLrqGZeoM8v72MfYggDceY4K1itzWQ==}
+  '@types/node@22.18.12':
+    resolution: {integrity: sha512-BICHQ67iqxQGFSzfCFTT7MRQ5XcBjG5aeKh5Ok38UBbPe5fxTyE+aHFxwVrGyr8GNlqFMLKD1D3P2K/1ks8tog==}
 
   accepts@2.0.0:
     resolution: {integrity: sha512-5cvg6CtKwfgdmVqY1WIiXKc3Q1bkRqGLi+2W/6ao+6Y7gu/RCwRuAhGEzh5B4KlszSuTLgZYuqFqo5bImjNKng==}
@@ -971,9 +971,9 @@ snapshots:
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
 
-  '@line/bot-sdk@10.3.0':
+  '@line/bot-sdk@10.4.0':
     dependencies:
-      '@types/node': 22.18.6
+      '@types/node': 22.18.12
     optionalDependencies:
       axios: 1.12.2
     transitivePeerDependencies:
@@ -986,7 +986,7 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/node@22.18.6':
+  '@types/node@22.18.12':
     dependencies:
       undici-types: 6.21.0
 
